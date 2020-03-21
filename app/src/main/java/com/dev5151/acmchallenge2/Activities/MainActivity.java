@@ -2,7 +2,6 @@ package com.dev5151.acmchallenge2.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -12,7 +11,7 @@ import com.dev5151.acmchallenge2.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button exampleButton;
+    Button sendButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
         initViews();
 
-        exampleButton.setOnClickListener(new View.OnClickListener() {
+        sendButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, ExampleActivity.class));
@@ -31,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initViews() {
-        exampleButton = findViewById(R.id.btn_example);
+        sendButton = findViewById(R.id.btn_example);
     }
 
 }
