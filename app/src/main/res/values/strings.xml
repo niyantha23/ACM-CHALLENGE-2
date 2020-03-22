@@ -19,4 +19,13 @@
     <string name="email_id">Email Id</string>
     <string name="post_user_details">Post User Details</string>
     <string name="enter_the_user_s_email">Enter the User\'s Email</string>
+    <string name="registration_n_o">REGISTRATION N.O : </string>
+    <string name="enter_your_registration_number">Enter your Registration number</string>
+    <string name="name1">NAME : </string>
+    <string name="enter_your_name">Enter your Name</string>
+    <string name="Age">AGE:</string>
+    <string name="enter_your_age">Enter your Age</string>
+    <string name="city">CITY:</string>
+    <string name="where_do_you_live">Where do you live?</string>
+
 </resources>
