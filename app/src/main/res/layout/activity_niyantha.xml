@@ -11,6 +11,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+
         <TextView
             android:layout_width="305dp"
             android:layout_height="37dp"
@@ -20,6 +21,7 @@
             android:textSize="30sp"
             android:textStyle="bold" />
 
+
         <TextView
             android:id="@+id/reg_no"
             android:layout_width="305dp"
@@ -27,6 +29,8 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:text="@string/registration_n_o" />
+
+
 
         <EditText
             android:id="@+id/reg_no_edit_text"
@@ -36,6 +40,7 @@
             android:layout_marginBottom="8dp"
             android:hint="@string/enter_your_registration_number"
             tools:layout_editor_absoluteX="23dp" />
+
 
 
         <TextView
@@ -55,6 +60,7 @@
             android:layout_marginBottom="8dp"
             android:hint="@string/enter_your_name"
             android:inputType="textPersonName"/>
+
 
         <TextView
             android:id="@+id/age"

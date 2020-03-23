@@ -1,4 +1,5 @@
 package com.dev5151.acmchallenge2.Activities;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -21,10 +22,14 @@ public class NiyanthaActivity extends AppCompatActivity {
     private EditText mCity;
     private FloatingActionButton sendButton;
     private EditText mPhone;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_niyantha);
+
+
+
         initializeView();
         FirebaseDatabase.getInstance().setPersistenceEnabled(true);
         mFirebaseDatabase =FirebaseDatabase.getInstance();
@@ -60,11 +65,8 @@ public class NiyanthaActivity extends AppCompatActivity {
                 mAge.getText().toString(),
                 mCity.getText().toString(),mPhone.getText().toString());
         mDatabaseReference.push().setValue(student);
-    mRegNo.getText().clear();
-    mName.getText().clear();
-    mAge.getText().clear();
-    mPhone.getText().clear();
-    mCity.getText().clear();}
+        ClearEditText();
+        }
 
     public void OnHitSend()
     {
@@ -84,4 +86,10 @@ public class NiyanthaActivity extends AppCompatActivity {
             startActivity(viewIntent);
         }
     }
+    public void ClearEditText(){
+        mRegNo.getText().clear();
+        mName.getText().clear();
+        mAge.getText().clear();
+        mPhone.getText().clear();
+        mCity.getText().clear();}
 }
