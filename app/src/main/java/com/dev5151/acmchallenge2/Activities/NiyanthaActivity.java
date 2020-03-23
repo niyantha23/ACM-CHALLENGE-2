@@ -10,18 +10,17 @@ import android.widget.Button;
 import android.widget.EditText;
 import com.dev5151.acmchallenge2.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class NiyanthaActivity extends AppCompatActivity {
     private FirebaseDatabase mFirebaseDatabase;
     private DatabaseReference mDatabaseReference;
-    private EditText mRegNo;
-    private EditText mName;
-    private EditText mAge;
-    private EditText mCity;
+    private TextInputEditText mRegNo,mName,mAge,mCity,mPhone;
+
     private FloatingActionButton sendButton;
-    private EditText mPhone;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
