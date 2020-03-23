@@ -29,5 +29,6 @@
     <string name="where_do_you_live">Where do you live?</string>
     <string name="phone_number">PHONE NUMBER:</string>
     <string name="enter_your_phone_number">Enter your Phone number</string>
+    <string name="student_details">STUDENT DETAILS</string>
 
 </resources>

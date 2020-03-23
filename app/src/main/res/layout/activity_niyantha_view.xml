@@ -5,12 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activities.NiyanthaView">
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview_niyantha"
-        android:layout_width="409dp"
-        android:layout_height="729dp"
-        android:background="#EFEFF3"
+        android:layout_width="@dimen/recycler_view_width"
+        android:layout_height="@dimen/recycler_view_height"
+        android:background="@color/recycler_view_background"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

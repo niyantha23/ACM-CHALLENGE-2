@@ -4,33 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activities.NiyanthaActivity">
-
+    tools:context=".Activities.NiyanthaActivity"
+    android:background="@drawable/background1">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-
-
         <TextView
-            android:layout_width="305dp"
-            android:layout_height="37dp"
+            android:layout_width="@dimen/textview_width"
+            android:layout_height="@dimen/textview_height"
             android:layout_gravity="center"
-            android:layout_margin="16dp"
+            android:layout_margin="@dimen/layoutmargin"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
             android:fontFamily="cursive"
             android:gravity="center"
-            android:text="STUDENT DETAILS"
+            android:text="@string/student_details"
             android:textColor="#000"
             android:textSize="30sp"
             android:textStyle="bold" />
-
         <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="305dp"
+            android:layout_width="@dimen/textview_width"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="18dp"
-            android:layout_marginLeft="45dp"
+            android:layout_marginBottom="@dimen/input_text_bottom_margin"
+            android:layout_marginLeft="@dimen/input_text_left_margin"
             android:hint="@string/registration_n_o"
             android:enabled="true"
             app:shapeAppearance="@style/Cut"
@@ -40,15 +37,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </com.google.android.material.textfield.TextInputLayout>
-
-
-
-
         <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="305dp"
+            android:layout_width="@dimen/textview_width"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="18dp"
-            android:layout_marginLeft="45dp"
+            android:layout_marginBottom="@dimen/input_text_bottom_margin"
+            android:layout_marginLeft="@dimen/input_text_left_margin"
             android:hint="@string/name1"
             android:enabled="true"
             app:shapeAppearance="@style/Cut"
@@ -60,10 +53,10 @@
                 android:inputType="textPersonName"/>
         </com.google.android.material.textfield.TextInputLayout>
         <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="305dp"
+            android:layout_width="@dimen/textview_width"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="18dp"
-            android:layout_marginLeft="45dp"
+            android:layout_marginBottom="@dimen/input_text_bottom_margin"
+            android:layout_marginLeft="@dimen/input_text_left_margin"
             android:hint="@string/age"
             android:enabled="true"
             app:shapeAppearance="@style/Cut"
@@ -76,10 +69,10 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="305dp"
+            android:layout_width="@dimen/textview_width"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="18dp"
-            android:layout_marginLeft="45dp"
+            android:layout_marginBottom="@dimen/input_text_bottom_margin"
+            android:layout_marginLeft="@dimen/input_text_left_margin"
             android:hint="@string/phone_number"
             android:enabled="true"
             app:shapeAppearance="@style/Cut"
@@ -90,14 +83,11 @@
                 android:layout_height="wrap_content"
                 android:inputType="phone"/>
         </com.google.android.material.textfield.TextInputLayout>
-
-
-
         <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="305dp"
+            android:layout_width="@dimen/textview_width"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="18dp"
-            android:layout_marginLeft="45dp"
+            android:layout_marginBottom="@dimen/input_text_bottom_margin"
+            android:layout_marginLeft="@dimen/input_text_left_margin"
             android:hint="@string/city"
             android:enabled="true"
             app:shapeAppearance="@style/Cut"
@@ -108,9 +98,6 @@
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"/>
         </com.google.android.material.textfield.TextInputLayout>
-
-
-
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/send_button"
             android:layout_width="match_parent"
@@ -120,10 +107,5 @@
             android:clickable="true"
             app:srcCompat="@android:drawable/ic_menu_send"
             android:layout_marginBottom="20dp"/>
-
     </LinearLayout>
-
-
-
-
 </androidx.core.widget.NestedScrollView>
