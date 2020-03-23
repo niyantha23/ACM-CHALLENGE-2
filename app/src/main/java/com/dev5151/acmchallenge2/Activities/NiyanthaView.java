@@ -31,9 +31,6 @@ public class NiyanthaView extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_niyantha_view);
-
-
-
         RecyclerView recyclerView=findViewById(R.id.recyclerview_niyantha);
         NiyanthaViewAdapter adapter=new NiyanthaViewAdapter(this, studentDetails);
         recyclerView.setAdapter(adapter);

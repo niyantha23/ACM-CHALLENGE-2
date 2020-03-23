@@ -15,19 +15,21 @@
         <TextView
             android:layout_width="305dp"
             android:layout_height="37dp"
+            android:layout_gravity="center"
             android:layout_margin="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="cursive"
+            android:gravity="center"
             android:text="STUDENT DETAILS"
             android:textColor="#000"
             android:textSize="30sp"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:layout_gravity="center"/>
-
+            android:textStyle="bold" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="305dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
+            android:layout_marginBottom="18dp"
             android:layout_marginLeft="45dp"
             android:hint="@string/registration_n_o"
             android:enabled="true"
@@ -45,7 +47,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="305dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
+            android:layout_marginBottom="18dp"
             android:layout_marginLeft="45dp"
             android:hint="@string/name1"
             android:enabled="true"
@@ -60,7 +62,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="305dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
+            android:layout_marginBottom="18dp"
             android:layout_marginLeft="45dp"
             android:hint="@string/age"
             android:enabled="true"
@@ -76,7 +78,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="305dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
+            android:layout_marginBottom="18dp"
             android:layout_marginLeft="45dp"
             android:hint="@string/phone_number"
             android:enabled="true"
@@ -94,7 +96,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="305dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
+            android:layout_marginBottom="18dp"
             android:layout_marginLeft="45dp"
             android:hint="@string/city"
             android:enabled="true"
@@ -116,7 +118,8 @@
             android:layout_gravity="end"
             android:layout_marginRight="20dp"
             android:clickable="true"
-            app:srcCompat="@android:drawable/ic_menu_send" />
+            app:srcCompat="@android:drawable/ic_menu_send"
+            android:layout_marginBottom="20dp"/>
 
     </LinearLayout>
 
