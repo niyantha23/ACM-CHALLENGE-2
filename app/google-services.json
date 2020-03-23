@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1033695518258",
+    "firebase_url": "https://formapp-dd142.firebaseio.com",
+    "project_id": "formapp-dd142",
+    "storage_bucket": "formapp-dd142.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1033695518258:android:7e0f511ac89abd6004662b",
+        "android_client_info": {
+          "package_name": "com.dev5151.acmchallenge2.Activities"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1033695518258-trdcd1qseceu1hjh9q4i6r507h5vum06.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dev5151.acmchallenge2.Activities",
+            "certificate_hash": "ad70c1082d7f3811ec2332b9d7f75b910017fd4f"
+          }
+        },
+        {
+          "client_id": "1033695518258-37sn70bbqok9hn60eadf8mc7usrspg0c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBn_u2boqLHe-4-ozurhbjIsiSsDnOWOCw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1033695518258-37sn70bbqok9hn60eadf8mc7usrspg0c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
