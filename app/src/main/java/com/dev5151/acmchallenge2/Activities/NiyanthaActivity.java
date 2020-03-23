@@ -20,7 +20,7 @@ public class NiyanthaActivity extends AppCompatActivity {
     private EditText mAge;
     private EditText mCity;
     private FloatingActionButton sendButton;
-    private Button button;
+    private EditText mPhone;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,14 +50,21 @@ public class NiyanthaActivity extends AppCompatActivity {
         mName =findViewById(R.id.name_edit_text);
         mAge =findViewById(R.id.age_edit_text);
         mCity =findViewById(R.id.city_edit_text);
-        sendButton=findViewById(R.id.send_button);}
+        sendButton=findViewById(R.id.send_button);
+        mPhone=findViewById(R.id.phone_edit_text);
+    }
     public void PushToFirebase(){
 
         Student student= new Student(mRegNo.getText().toString(),
                 mName.getText().toString(),
                 mAge.getText().toString(),
-                mCity.getText().toString());
-        mDatabaseReference.push().setValue(student);}
+                mCity.getText().toString(),mPhone.getText().toString());
+        mDatabaseReference.push().setValue(student);
+    mRegNo.getText().clear();
+    mName.getText().clear();
+    mAge.getText().clear();
+    mPhone.getText().clear();
+    mCity.getText().clear();}
 
     public void OnHitSend()
     {
@@ -69,7 +76,9 @@ public class NiyanthaActivity extends AppCompatActivity {
             mAge.setError("Age is required!");
         } else if (TextUtils.isEmpty(mCity.getText())) {
             mCity.setError("City is required!");
-        } else {
+        } else  if (TextUtils.isEmpty(mPhone.getText())) {
+            mPhone.setError("Phone n.o is required!");}
+        else {
             PushToFirebase();
             Intent viewIntent = new Intent(NiyanthaActivity.this, NiyanthaView.class);
             startActivity(viewIntent);

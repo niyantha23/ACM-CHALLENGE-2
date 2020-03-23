@@ -36,6 +36,7 @@ public class NiyanthaViewAdapter extends RecyclerView.Adapter <NiyanthaViewAdapt
         holder.name.setText(students.get(position).getName());
         holder.age.setText(students.get(position).getAge());
         holder.city.setText(students.get(position).getCity());
+        holder.phone.setText(students.get(position).getPhone());
 
     }
 
@@ -46,7 +47,7 @@ public class NiyanthaViewAdapter extends RecyclerView.Adapter <NiyanthaViewAdapt
         return students.size();
     }
     public class viewHolder extends RecyclerView.ViewHolder {
-        private TextView regNo,name,age,city;
+        private TextView regNo,name,age,city,phone;
         public viewHolder(@NonNull View itemView) {
             super(itemView);
 
@@ -55,6 +56,7 @@ public class NiyanthaViewAdapter extends RecyclerView.Adapter <NiyanthaViewAdapt
             name=itemView.findViewById(R.id.name_text);
             age=itemView.findViewById(R.id.age_text);
             city=itemView.findViewById(R.id.city_text);
+            phone=itemView.findViewById(R.id.phone_no_text);
 
 
         }
