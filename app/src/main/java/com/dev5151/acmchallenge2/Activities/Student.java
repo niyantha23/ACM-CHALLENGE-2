@@ -1,5 +1,4 @@
 package com.dev5151.acmchallenge2.Activities;
-
 public class Student  {
 private String regNo,name,age,city,phone,imageUrl;
 public Student(){}

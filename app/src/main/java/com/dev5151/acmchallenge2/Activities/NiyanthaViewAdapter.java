@@ -1,6 +1,5 @@
 package com.dev5151.acmchallenge2.Activities;
 import android.content.Context;
-import android.provider.ContactsContract;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,13 +7,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.bumptech.glide.Glide;
 import com.dev5151.acmchallenge2.R;
-import com.google.firebase.storage.FirebaseStorage;
-import com.google.firebase.storage.StorageReference;
-
 import java.util.ArrayList;
+
 public class NiyanthaViewAdapter extends RecyclerView.Adapter <NiyanthaViewAdapter.viewHolder> {
     private ArrayList<Student> students;
     private Context context;
@@ -31,17 +26,6 @@ public class NiyanthaViewAdapter extends RecyclerView.Adapter <NiyanthaViewAdapt
     }
     @Override
     public void onBindViewHolder(@NonNull viewHolder holder, int position) {
-        // Reference to an image file in Cloud Storage
-        StorageReference storageReference = FirebaseStorage.getInstance().getReference();
-
-// ImageView in your Activity
-
-
-// Download directly from StorageReference using Glide
-// (See MyAppGlideModule for Loader registration)
-        Glide.with(context)
-                .load(storageReference)
-                .into(holder.Photo);
         holder.regNo.setText(students.get(position).getRegNo());
         holder.name.setText(students.get(position).getName());
         holder.age.setText(students.get(position).getAge());
